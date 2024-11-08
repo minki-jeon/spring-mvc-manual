@@ -7,8 +7,9 @@ import com.base.mvc.service.MVCService;
 
 public class MVCServiceImpl implements MVCService {
 	
-	@Autowired
-	private MVCDao mvcdao;
+//	@Autowired
+//	private MVCDao mvcdao;
+	MVCDao mvcdao = new MVCDao();
 	
 	public String methodSrv() {
 		System.out.println(mvcdao.methodDao());
